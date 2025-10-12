@@ -1,4 +1,13 @@
 function hollyKnight(name, stamina, undead) {
+
+
+  if (stamina > undead ) {
+    return console.log("Holly Knight " + name + " memenangkan pertempuran dengan mudah!")
+  } else if (stamina < undead) {
+    return console.log("Holly knight " + name + " mengalahkan " + stamina + " undead, namun sayang holly knight " + name + " gugur di medan perang!" )
+  } else {
+    return console.log("Beruntung Holly knight " + name + " berhasil mengalahkan " + stamina + " undead!")
+  }
   return null // TODO: replace this
 }
 
