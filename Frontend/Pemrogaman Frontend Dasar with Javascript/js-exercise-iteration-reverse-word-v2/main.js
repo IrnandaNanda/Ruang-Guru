@@ -1,5 +1,14 @@
 function reverseUnique(word) {
-  return null // TODO: replace this
+  let reverse = '';
+  let lastchart = ''
+
+  for(let i = word.length -1; i>=0; i++) {
+    if (lastchart !== word[i]) {
+      reverse += word[i]
+      lastchart = word[i]
+    }
+  }
+  return reverse
 }
 
 console.log(reverseUnique('greating')); //gnitaerg
