@@ -1,12 +1,16 @@
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <p>Ini adalah paragraf menggunakan JSX</p>
-      <button onClick={alert('Button Clicked')} className='btn btn-primary'>click Me</button>
-    </div>
+    <>
+      <div>
+        <h1 className="Header">Hello World</h1>
+        <p>Paragraf 1</p>
+        <p>Paragraf 2</p>
+        <p>Paragraf 3</p>
+        <button id="button1" onClick={() => alert("Button Clicked")}>
+          Click Me
+        </button>
+      </div>
+    </>
   );
 }
 
