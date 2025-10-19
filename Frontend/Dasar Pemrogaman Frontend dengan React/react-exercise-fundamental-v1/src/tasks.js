@@ -1,20 +1,27 @@
 import { useState } from "react";
 
 function Task1() {
-  // TODO: answer here
+  return (
+    <div className="basic_component">
+      <h1>Halo dunia!</h1>
+    </div>
+  );
 }
 
 function Task1_1(props) {
-  // TODO: answer here
+  return (
+    <>
+      <h1>{props.name}</h1>
+    </>
+  );
 }
 
 function Task2() {
-  // TODO: answer here
-
+  const [paragraph, setparagraph] = useState("Klik tombol di bawah");
   return (
     <div>
-      <h1>Ganti tulisan ini dengan current state</h1>  {/* TODO: replace this */}
-        <button>  {/* TODO: replace this */}
+      <h1>{paragraph}</h1>
+      <button onClick={() => setparagraph("Tombol telah di-klil")}>
         Klik saya!
       </button>
     </div>
@@ -45,21 +52,36 @@ const students = [
 ];
 
 function Task3() {
-  // TODO: answer here
+  return (
+    <>
+      {students.map((student) => (
+        <h2>
+          {student.name} - {student.age}
+        </h2>
+      ))}
+    </>
+  );
 }
 
 function Task3_1() {
-  // TODO: answer here
+  return (
+    <>
+      {students.filter((student) => 
+        student.dropout === false).map((student) => (
+          <h2>
+            {student.name} - {student.age}
+          </h2>
+        ))}
+    </>
+  )
 }
 
 function Task4() {
-  // TODO: answer here
-
+  const [remove, setremove] = useState(false)
   return (
     <div>
-      <p><p>Klik tombol di-bawah untuk menghapus elemen ini</p></p>  {/* TODO: replace this */}
-
-      <button>Hapus</button>  {/* TODO: replace this */}
+        {!remove && <p>Klik tombol di-bawah untuk menghapus elemen ini</p>}
+      <button onClick={() => setremove(true)}>Hapus</button>
     </div>
   );
 }
