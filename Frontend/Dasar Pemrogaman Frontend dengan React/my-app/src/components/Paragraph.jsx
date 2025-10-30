@@ -1,12 +1,16 @@
-function Paragraph() {
+function Paragraph(props) {
   return (
     <>
       <p>Paragraf 1</p>
       <p>Paragraf 2 from Component</p>
-      <p>Paragraf 3</p>
+      <p>{props.paragraph}</p>
     </>
   );
 }
+
+Paragraph.defaultProps = {
+  paragraph: 'Paragraph yang menggunakan default Props'
+};
 
 function Footer() {
     return(

@@ -1,8 +1,12 @@
-function Button() {
+function Button(Props) {
+
+  // Destruciring 
+  const {name = 'Button Menggunakan Default Props'} = Props
+
   return (
     <>
       <button id="button1" onClick={() => alert("Button Clicked")}>
-        Click Me from Component
+        {name}
       </button>
     </>
   );

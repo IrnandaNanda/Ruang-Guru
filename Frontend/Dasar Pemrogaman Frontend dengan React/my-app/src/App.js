@@ -7,7 +7,9 @@ function App() {
     <>
       <div>
         <Title/>
-        <Paragraph/>
+        <Paragraph paragraph="Paragraph 3 yang menggunakan Props"/>
+        <Button name='Button menggunakan component & Props'/>
+        <br/>
         <Button/>
         <Footer/>
       </div>
