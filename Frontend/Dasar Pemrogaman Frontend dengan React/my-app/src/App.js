@@ -1,6 +1,6 @@
 import Title from "./components/Title";
 import {Button, CustomButton}  from "./components/Button"
-import { Footer, Paragraph } from "./components/Paragraph";
+import { Footer, Paragraph, Student } from "./components/Paragraph";
 
 function App() {
   return (
@@ -12,8 +12,9 @@ function App() {
         <br/>
         <Button/>
         <div>
-          <CustomButton textButton='Edit'/>
+          <CustomButton textButton='Button menggunakan Props Children'/>
         </div>
+        <Student/>
         <Footer/>
       </div>
     </>

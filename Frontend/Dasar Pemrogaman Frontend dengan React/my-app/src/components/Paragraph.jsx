@@ -1,3 +1,17 @@
+// import useState from 'react';
+import { useState } from "react";
+
+function Student(){
+  const [name, setName] = useState('Ini adalah State');
+
+  return (
+    <div>
+      <h1>{name}</h1>
+      <button onClick={() => setName("contoh State")}>Change Name</button>
+    </div>
+  )
+}
+
 function Paragraph(props) {
   return (
     <>
@@ -20,4 +34,4 @@ function Footer() {
     )
 }
 
-export { Paragraph, Footer }
+export { Paragraph, Footer, Student }
